@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f2f5;
+  font-family: Helvetica, sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+button,
+input,
+button {
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  padding-top: 130px;
+  padding-bottom: 200px;
+}
+
+.imagem {
+  display: block;
+  max-width: 100%;
+  height: 106px;
+  margin: -28px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #1c1e21;
+  font-family: Helvetica, sans-serif;
+  max-width: 500px;
+}
+
+.formulario {
+  background: white;
+  padding: 16px 16px 24px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.formulario a input button {
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  border: 1px solid #dddfe2;
+  outline: none;
+}
+
+input:focus {
+  border-color: #1877f2;
+  box-shadow: 0 0 0 2px #e7f3ff;
+  caret-color: #1877f2;
+}
+
+input [placeholder] {
+  /* falando com um atributo da minha tag intup*/
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+input::placeholder {
+  font-size: 18px;
+  color: #1d2129;
+  opacity: 0.6;
+}
+
+.entrar {
+  background: #1877f2;
+  width: 100%;
+  font-size: 20px;
+}
+
+.entrar:hover {
+  background: #166fe5;
+}
+
+.criarConta {
+  font-size: 16px;
+  background: #42b72a;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.criarConta:hover {
+  background: #36a420;
+}
+
+.formulario a {
+  text-align: center;
+  display: block;
+  margin-top: 16px;
+  color: #1877f2;
+  font-size: 14px;
+  text-decoration: none;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #dadde1;
+}
+
+.formulario a:hover {
+  text-decoration: underline;
+}
+
+.entrar,
+.criarConta {
+  font-weight: bold;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: 200ms cubic-bezier(0.08, 0.52, 0.52, 1);
+}
+
+#p-criarPagina {
+  margin-top: 28px;
+}
+
+p,
+p > a {
+  color: #1c1e21;
+  font-size: 14px;
+}
+
+p > a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p > a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: white;
+  font-size: 14px;
+  color: #737373;
+  margin-left: -50px;
+  margin-right: -50px;
+  text-align: center;
+  height: 219px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
